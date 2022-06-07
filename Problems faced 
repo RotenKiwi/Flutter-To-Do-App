@@ -1,1 +1,2 @@
 1. Faced a problem while changing the pubspec.yaml file: Realised indentation matters in this file and that "assets" had an extra indent.
+2. "stful" can be used as a shortcut to create a stateful widget :)
