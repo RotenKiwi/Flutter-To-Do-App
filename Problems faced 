@@ -1,5 +1,3 @@
-PAT: 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
-
 1. Faced a problem while changing the pubspec.yaml file: Realised indentation matters in this file and that "assets" had an extra indent.
 2. "stful" can be used as a shortcut to create a stateful widget :)
 3. realised i cant have 'color' and 'decoration' both in a container and if i want to i must include the 'color' attribute inside the decoration attribute
