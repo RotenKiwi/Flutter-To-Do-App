@@ -29,7 +29,7 @@ class TaskCardWidget extends StatelessWidget {
             Padding(padding: EdgeInsets.only(
               top: 10.0,
             )),
-            Text("Welcome to the To-Do app :)"
+            Text("Welcome to the To-Do app :) \n"
                 "Edit or delete to start using the app.",
             style: TextStyle(
               height: 1.5,
