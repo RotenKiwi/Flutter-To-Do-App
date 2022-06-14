@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_projects/widget.dart';
 
@@ -19,21 +21,23 @@ class _HomepageState extends State<Homepage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-            margin:const EdgeInsets.only(
-            bottom: 10.0,
+              margin: const EdgeInsets.only(
+                bottom: 10.0,
+              ),
             ),
-            ),
-            const Image(
-                image: AssetImage(
-                  'assets/images/logo.png',
-                ),
-            ),
-            const TaskCardWidget()
+            Image(
+                image: AssetImage("assets/images/logo.png"),),
+            Expanded(
+              child: ListView(
+                children: const [
+                  TaskCardWidget(
+                  ),
+                ],
+              ),
+            )
           ],
         ),
-        decoration: const BoxDecoration(
-            color: Color(0xFF52E160)
-        ),
+        decoration: const BoxDecoration(color: Color(0xFF52E160)),
       ),
     );
   }
