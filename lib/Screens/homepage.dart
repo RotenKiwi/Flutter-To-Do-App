@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_projects/widget.dart';
 
@@ -16,7 +14,7 @@ class _HomepageState extends State<Homepage> {
     return Scaffold(
       body: Container(
         width: double.infinity,
-        padding: EdgeInsets.all(32.0),
+        padding: const EdgeInsets.all(32.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -25,7 +23,7 @@ class _HomepageState extends State<Homepage> {
                 bottom: 10.0,
               ),
             ),
-            Image(
+            const Image(
                 image: AssetImage("assets/images/logo.png"),),
             Expanded(
               child: ListView(
