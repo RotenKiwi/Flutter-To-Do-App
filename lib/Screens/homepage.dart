@@ -28,9 +28,12 @@ class _HomepageState extends State<Homepage> {
             Expanded(
               child: ListView(
                 children: const [
-                  TaskCardWidget(
-                  ),
+                  TaskCardWidget(),
+                  TaskCardWidget(),
+                  TaskCardWidget(),
+                  TaskCardWidget(),
                 ],
+
               ),
             )
           ],
