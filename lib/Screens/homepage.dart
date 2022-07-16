@@ -18,18 +18,10 @@ class _HomepageState extends State<Homepage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
-              margin: EdgeInsets.only(
-                top: 10.0,
-                bottom: 10.0,),
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(
-                    'assets/images/logo.png',
-                  ),
-                  fit: BoxFit.fill,
-                ),
-                shape: BoxShape.circle,
+            Padding(
+              padding: EdgeInsets.all(10.0),
+              child: Image.asset(
+                'assets/images/logo.png',
               ),
             ),
             Expanded(
