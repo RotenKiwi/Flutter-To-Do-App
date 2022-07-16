@@ -21,12 +21,21 @@ class _HomepageState extends State<Homepage> {
             Container(
               margin: EdgeInsets.only(
                 top: 10.0,
-                bottom: 10.0,
+                bottom: 10.0,),
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(
+                    'assets/images/logo.png',
+                  ),
+                  fit: BoxFit.fill,
+                ),
+                shape: BoxShape.circle,
               ),
             ),
             Expanded(
               child: ListView(
                 children: const [
+                  TaskCardWidget(),
                   TaskCardWidget(),
                   TaskCardWidget(),
                   TaskCardWidget(),
