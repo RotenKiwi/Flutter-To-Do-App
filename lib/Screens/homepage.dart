@@ -19,12 +19,11 @@ class _HomepageState extends State<Homepage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              margin: const EdgeInsets.only(
+              margin: EdgeInsets.only(
+                top: 10.0,
                 bottom: 10.0,
               ),
             ),
-            const Image(
-                image: AssetImage("assets/images/logo.png"),),
             Expanded(
               child: ListView(
                 children: const [
@@ -33,7 +32,6 @@ class _HomepageState extends State<Homepage> {
                   TaskCardWidget(),
                   TaskCardWidget(),
                 ],
-
               ),
             )
           ],
