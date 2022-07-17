@@ -4,3 +4,4 @@
 4. Learnt About CrossAxisAlignment.
 5. Learnt about various new widgets.
 6. Changing a body and children of a widget.
+7. Couldn't add Image widget into container widget, so replaced container widget with the image widget itself for the log.
