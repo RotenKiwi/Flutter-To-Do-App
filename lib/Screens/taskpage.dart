@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:what_todo/database_helper.dart';
-import 'package:what_todo/models/task.dart';
-import 'package:what_todo/models/todo.dart';
-import 'package:what_todo/widgets.dart';
+
+import '../database_helper.dart';
+import '../models/task.dart';
+import '../models/todo.dart';
+import '../widget.dart';
+
 
 class Taskpage extends StatefulWidget {
   final Task task;
@@ -78,7 +80,7 @@ class _TaskpageState extends State<Taskpage> {
                             padding: const EdgeInsets.all(24.0),
                             child: Image(
                               image: AssetImage(
-                                  'assets/images/back_arrow_icon.png'),
+                                  'assets/images/back.png'),
                             ),
                           ),
                         ),
@@ -199,7 +201,7 @@ class _TaskpageState extends State<Taskpage> {
                                 border: Border.all(
                                     color: Color(0xFF86829D), width: 1.5)),
                             child: Image(
-                              image: AssetImage('assets/images/check_icon.png'),
+                              image: AssetImage('assets/images/check.png'),
                             ),
                           ),
                           Expanded(
@@ -214,7 +216,7 @@ class _TaskpageState extends State<Taskpage> {
                                     Todo _newTodo = Todo(
                                       title: value,
                                       isDone: 0,
-                                        taskId: _taskId,
+                                      taskId: _taskId,
                                     );
                                     await _dbHelper.insertTodo(_newTodo);
                                     setState(() {});
@@ -257,7 +259,7 @@ class _TaskpageState extends State<Taskpage> {
                       ),
                       child: Image(
                         image: AssetImage(
-                          "assets/images/delete_icon.png",
+                          "assets/images/delete.png",
                         ),
                       ),
                     ),
