@@ -26,13 +26,13 @@ class _TaskpageState extends State<Taskpage> {
   FocusNode _descriptionFocus;
   FocusNode _todoFocus;
 
-  bool _contentVisile = false;
+  bool _contentVisible = false;
 
   @override
   void initState() {
     if (widget.task != null) {
       // Set visibility to true
-      _contentVisile = true;
+      _contentVisible = true;
 
       _taskTitle = widget.task.title;
       _taskDescription = widget.task.description;
@@ -87,8 +87,9 @@ class _TaskpageState extends State<Taskpage> {
                           child: Padding(
                             padding: const EdgeInsets.all(24.0),
                             child: Image(
+                              width: 80.0,
+                              height: 60.0,
                               image: AssetImage(
-
                                   'assets/images/back.png'),
                             ),
                           ),
@@ -104,7 +105,7 @@ class _TaskpageState extends State<Taskpage> {
                                   Task _newTask = Task(title: value);
                                   _taskId = await _dbHelper.insertTask(_newTask);
                                   setState(() {
-                                    _contentVisile = true;
+                                    _contentVisible = true;
                                     _taskTitle = value;
                                   });
                                 } else {
@@ -131,7 +132,7 @@ class _TaskpageState extends State<Taskpage> {
                     ),
                   ),
                   Visibility(
-                    visible: _contentVisile,
+                    visible: _contentVisible,
                     child: Padding(
                       padding: EdgeInsets.only(
                         bottom: 12.0,
@@ -159,7 +160,7 @@ class _TaskpageState extends State<Taskpage> {
                     ),
                   ),
                   Visibility(
-                    visible: _contentVisile,
+                    visible: _contentVisible,
                     child: FutureBuilder(
                       initialData: [],
                       future: _dbHelper.getTodo(_taskId),
@@ -191,7 +192,7 @@ class _TaskpageState extends State<Taskpage> {
                     ),
                   ),
                   Visibility(
-                    visible: _contentVisile,
+                    visible: _contentVisible,
                     child: Padding(
                       padding: EdgeInsets.symmetric(
                         horizontal: 24.0,
@@ -249,7 +250,7 @@ class _TaskpageState extends State<Taskpage> {
                 ],
               ),
               Visibility(
-                visible: _contentVisile,
+                visible: _contentVisible,
                 child: Positioned(
                   bottom: 24.0,
                   right: 24.0,
