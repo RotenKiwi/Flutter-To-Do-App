@@ -20,7 +20,7 @@ class _HomepageState extends State<Homepage> {
         child: Container(
           width: double.infinity,
           padding: EdgeInsets.symmetric(horizontal: 24.0),
-          color: Color(0xFFF6F6F6),
+          color: Color(0xFF98EE96),
           child: Stack(
             children: [
               Column(
@@ -93,7 +93,7 @@ class _HomepageState extends State<Homepage> {
                     height: 60.0,
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
-                          colors: [Color(0xFF7349FE), Color(0xFF643FDB)],
+                          colors: [Color(0x98EE96), Color(0x98EE96)],
                           begin: Alignment(0.0, -1.0),
                           end: Alignment(0.0, 1.0)),
                       borderRadius: BorderRadius.circular(20.0),

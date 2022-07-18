@@ -60,14 +60,22 @@ class _TaskpageState extends State<Taskpage> {
     return Scaffold(
       body: SafeArea(
         child: Container(
+          color: Color(0xFF98EE96),
           child: Stack(
             children: [
+              //  Image(
+              //    width: 80.0,
+              //   height: 80,
+              //   image: AssetImage(
+              //       'assets/images/back.png'),
+              // ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
+
                     padding: EdgeInsets.only(
-                      top: 24.0,
+                      top: 30.0,
                       bottom: 6.0,
                     ),
                     child: Row(
@@ -80,6 +88,7 @@ class _TaskpageState extends State<Taskpage> {
                             padding: const EdgeInsets.all(24.0),
                             child: Image(
                               image: AssetImage(
+
                                   'assets/images/back.png'),
                             ),
                           ),
@@ -114,7 +123,7 @@ class _TaskpageState extends State<Taskpage> {
                             style: TextStyle(
                               fontSize: 26.0,
                               fontWeight: FontWeight.bold,
-                              color: Color(0xFF211551),
+                              color: Color(0xFF000000),
                             ),
                           ),
                         )
@@ -190,6 +199,7 @@ class _TaskpageState extends State<Taskpage> {
                       child: Row(
                         children: [
                           Container(
+                            // color: Color(0xFF98EE96),
                             width: 20.0,
                             height: 20.0,
                             margin: EdgeInsets.only(
@@ -197,9 +207,9 @@ class _TaskpageState extends State<Taskpage> {
                             ),
                             decoration: BoxDecoration(
                                 color: Colors.transparent,
-                                borderRadius: BorderRadius.circular(6.0),
+                                // borderRadius: BorderRadius.circular(6.0),
                                 border: Border.all(
-                                    color: Color(0xFF86829D), width: 1.5)),
+                                    color: Color(0xFF000000), width: 1.5)),
                             child: Image(
                               image: AssetImage('assets/images/check.png'),
                             ),
@@ -254,7 +264,7 @@ class _TaskpageState extends State<Taskpage> {
                       width: 60.0,
                       height: 60.0,
                       decoration: BoxDecoration(
-                        color: Color(0xFFFE3577),
+                        color: Color(0x98EE96),
                         borderRadius: BorderRadius.circular(20.0),
                       ),
                       child: Image(

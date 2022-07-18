@@ -18,7 +18,7 @@ class TaskCardWidget extends StatelessWidget {
         bottom: 20.0,
       ),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Color(0xFF77C15B),
         borderRadius: BorderRadius.circular(20.0),
       ),
       child: Column(
@@ -27,7 +27,7 @@ class TaskCardWidget extends StatelessWidget {
           Text(
             title ?? "(Unnamed Task)",
             style: TextStyle(
-              color: Color(0xFF211551),
+              color: Color(0xFF000000),
               fontSize: 22.0,
               fontWeight: FontWeight.bold,
             ),
@@ -40,7 +40,7 @@ class TaskCardWidget extends StatelessWidget {
               desc ?? "No Description Added",
               style: TextStyle(
                 fontSize: 16.0,
-                color: Color(0xFF86829D),
+                color: Color(0xFF000000),
                 height: 1.5,
               ),
             ),
@@ -73,7 +73,7 @@ class TodoWidget extends StatelessWidget {
               right: 12.0,
             ),
             decoration: BoxDecoration(
-                color: isDone ? Color(0xFF7349FE) : Colors.transparent,
+                color: isDone ? Color(0x7349FE) : Colors.transparent,
                 borderRadius: BorderRadius.circular(6.0),
                 border: isDone ? null : Border.all(
                     color: Color(0xFF86829D),
