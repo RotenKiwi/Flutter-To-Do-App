@@ -7,3 +7,9 @@
 7. Couldn't add Image widget into container widget, so replaced container widget with the image widget itself for the log.
 8. Used the padding widget and understood how the padding widget is used to add padding into various other widgets in general.
 9. Also realised how one widget can be included into other widget for their properties to be carried over.
+10. Learning about gestures and actions took a long time.
+11. Handling of local database and its items using SQLite was exciting.
+12. Addition of Tasks and Deletion along with modification.
+13. had to create a test file in order to learn end execute before committing to the main project.
+14. Opening and viewing of tasks was fairly easy due to the creation of a new file which included the complete layout of the task page.
+15. Resizing image and changing proportions of the container to make it look good.
