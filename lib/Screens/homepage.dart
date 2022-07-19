@@ -30,6 +30,7 @@ class _HomepageState extends State<Homepage> {
                       bottom: 32.0,
                     ),
                     child: Image(
+                      width: 80.0,
                       image: AssetImage('assets/images/logo.png'),
                     ),
                   ),
