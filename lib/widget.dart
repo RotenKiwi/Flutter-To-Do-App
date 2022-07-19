@@ -76,7 +76,7 @@ class TodoWidget extends StatelessWidget {
                 color: isDone ? Color(0x7349FE) : Colors.transparent,
                 borderRadius: BorderRadius.circular(6.0),
                 border: isDone ? null : Border.all(
-                    color: Color(0xFF86829D),
+                    color: Color(0xFF77C15B),
                     width: 1.5
                 )
             ),
@@ -88,7 +88,7 @@ class TodoWidget extends StatelessWidget {
             child: Text(
               text ?? "(Unnamed Todo)",
               style: TextStyle(
-                color: isDone ? Color(0xFF211551) : Color(0xFF86829D),
+                color: isDone ? Color(0xFF000000) : Color(0xFF86829D),
                 fontSize: 16.0,
                 fontWeight: isDone ? FontWeight.bold : FontWeight.w500,
               ),
