@@ -88,8 +88,8 @@ class _HomepageState extends State<Homepage> {
                     });
                   },
                   child: Container(
-                    width: 60.0,
-                    height: 60.0,
+                    width: 65.0,
+                    height: 65.0,
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                           colors: [Color(0x98EE96), Color(0x98EE96)],
